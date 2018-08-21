@@ -1,0 +1,1 @@
+[{},{"Id":1,"Nombre":"paizMart","Direccion":"Zona 14","Telefono":"45843615"},{"Id":1,"Nombre":"Almacenes Robles","Direccion":"Zona 1","Telefono":"55847596"},{"Id":1,"Nombre":"Despensa","Direccion":"Chiquimula","Telefono":"47484945"}]

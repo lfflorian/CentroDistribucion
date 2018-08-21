@@ -1,0 +1,1 @@
+[{},{"Id":1,"IdProducto":"Desodorante","IdSupermercado":"paizMart","Cantidad":2,"Total":34.0},{"Id":2,"IdProducto":"Jabon","IdSupermercado":"paizMart","Cantidad":12,"Total":186.0},{"Id":3,"IdProducto":"Crema","IdSupermercado":"paizMart","Cantidad":200,"Total":1250.00}]

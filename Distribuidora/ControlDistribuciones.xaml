@@ -1,0 +1,32 @@
+﻿<Window x:Class="Distribuidora.ControlDistribuciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Distribuidora"
+        mc:Ignorable="d"
+        Title="ControlDistribuciones" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="631*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Margin="0,0,0,386" TextBlock.TextAlignment="Center" Grid.ColumnSpan="2">
+            <Menu DockPanel.Dock="Top" Height="26" Margin="0,0,-0.4,0">
+                <MenuItem Header="Ditribución">
+                    <MenuItem Header="Supermercados" Name="opSupermercado" Click="opSupermercado_Click"></MenuItem>
+                    <MenuItem Header="Productos" Name="opProductos" Click="opProductos_Click"></MenuItem>
+                    <MenuItem Header="Entregas" Name="opDistribucion" Click="opDistribucion_Click" ></MenuItem>
+                </MenuItem>
+                <MenuItem Name="administracionModulo" Header="Administración">
+                    <MenuItem Header="Usuarios" Name="opUsuario" Click="opUsuario_Click"></MenuItem>
+                    <MenuItem Header="Departamento" Name="opDepartamento" Click="opDepartamento_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Name="Sailr" Header="Salir" Click="Sailr_Click" Height="26"></MenuItem>
+            </Menu>
+        </DockPanel>
+        <Frame Name="Mostrar" Grid.ColumnSpan="2" Margin="0,38,10,0" Height="371" VerticalAlignment="Top" HorizontalAlignment="Right" Width="772">
+
+        </Frame>
+    </Grid>
+</Window>

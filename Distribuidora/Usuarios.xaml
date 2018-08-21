@@ -1,0 +1,41 @@
+﻿<Page x:Class="Distribuidora.Usuarios"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Distribuidora"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Usuarios">
+
+    <Grid>
+        <Button Content="Agregar nuevo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="29" Margin="621,10,0,0" Click="btnCrear_Click"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="29" Margin="621,44,0,0" Click="btnEliminar_Click"/>
+        <Button Content="Actualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="29" Margin="621,80,0,0" Click="btnActualizar_Click"/>
+        <ListView x:Name="TablaDatos" Margin="10,158,10,9.6" SelectionChanged="TablaDatos_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id Usuario" Width="220" DisplayMemberBinding="{Binding Path=IdUsuario}" />
+                    <GridViewColumn Header="Nombre" Width="220" DisplayMemberBinding="{Binding Path=Nombre}" />
+                    <GridViewColumn Header="Rol" Width="120" DisplayMemberBinding="{Binding Path=Rol}" />
+                    <GridViewColumn Header="Departamento" Width="220" DisplayMemberBinding="{Binding Path=Departamento}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox Name="txtId" IsEnabled="False" HorizontalAlignment="Left" Height="23" Margin="142,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="142,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
+        <TextBox Name="txtContraseña"  HorizontalAlignment="Left" Height="23" Margin="142,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
+        <Label Content="Id de usuario:" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre de usuario:" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rol:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cmbRol" HorizontalAlignment="Left" Margin="142,106,0,0" VerticalAlignment="Top" Width="256">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+        </ComboBox>
+        <Button Content="Refrescar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="29" Margin="621,115,0,0" Click="btnRefrescar_Click"/>
+        <Button IsEnabled="False" Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="29" Margin="443,100,0,0" Click="btnGuardar_Click"/>
+    </Grid>
+
+</Page>

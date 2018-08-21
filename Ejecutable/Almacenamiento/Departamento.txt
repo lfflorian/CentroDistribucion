@@ -1,0 +1,1 @@
+[{},{"Id":1,"Nombre":"Contabilidad"},{"Id":3,"Nombre":"Bodega"},{"Id":4,"Nombre":"Gerente"},{"Id":2,"Nombre":"IT"}]

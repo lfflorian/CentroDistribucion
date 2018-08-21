@@ -1,0 +1,1 @@
+[{},{"Identificador":1,"Nombre":"Administrador"},{"Identificador":2,"Nombre":"Operador"},{"Identificador":3,"Nombre":"Visualizador"}]
